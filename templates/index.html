@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT40 Mental Health Awareness Programme</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-color: #f0f2f2;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header img {
+            height: 50px;
+            width: auto;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: #333;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            background-color: transparent;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="TT40 Mental Health Awareness Logo">
+        <h1>TT40 Mental Health Awareness Programme</h1>
+    </header>
+    <main>
+        <p>Mental illnesses affect 19% of the adult population, 46% of teenagers and 13% of children each year. People struggling with their mental health may be in your family, live next door, teach your children, work in the next cubicle or sit in the same church pew.</p>
+
+        <p>However, only half of those affected receive treatment, often because of the stigma attached to mental health. Untreated, mental illness can contribute to higher medical expenses, poorer performance at school and work, fewer employment opportunities and increased risk of suicide.</p>
+
+        <h2>What Exactly is a Mental Illness</h2>
+
+        <p>A mental illness is a physical illness of the brain that causes disturbances in thinking, behavior, energy or emotion that make it difficult to cope with the ordinary demands of life. Research is starting to uncover the complicated causes of these diseases which can include genetics, brain chemistry, brain structure, experiencing trauma and/or having another medical condition, like heart disease.</p>
+
+        <p>The two most common mental health conditions are:</p>
+
+        <h2>Anxiety Disorders</h2>
+
+        <p>More than 19% of adults each year struggle with some type of anxiety disorder, including:</p>
+        <ul>
+            <li><a href="{{ url_for('ptsd') }}">post-traumatic stress disorder (PTSD)</a></li>
+            <li><a href="{{ url_for('ocd') }}">obsessive-compulsive disorder (OCD)</a></li>
+            <li><a href="{{ url_for('panic_disorder') }}">panic disorder (panic attacks)</a></li>
+            <li><a href="{{ url_for('gad') }}">generalized anxiety disorder</a></li>
+            <li><a href="{{ url_for('specific_phobias') }}">specific phobias</a></li>
+        </ul>
+
+        <h2>Mood Disorders</h2>
+
+        <p>Mood disorders, such as depression and bipolar depression, affect nearly 10% of adults each year and are characterized by difficulties in regulating one’s mood.</p>
+
+        <h2>About</h2>
+        <p>Information about mental health and its importance.</p>
+
+        <h2>Resources</h2>
+        <p>Great sources for mental health news and information include:</p>
+        <ul>
+            <li><a href="https://www.nimh.nih.gov" target="_blank">National Institute of Mental Health</a></li>
+            <li><a href="https://www.sadag.org/" target="_blank">South African Depression and Anxiety Group</a></li>
+            <li><a href="https://www.betterhelp.com/get-started/?go=true&utm_source=AdWords&utm_medium=Search_PPC_c&utm_term=therapist+online_b&utm_content=136971342842&network=g&placement=&target=&matchtype=b&utm_campaign=16805123991&ad_type=text&adposition=&kwd_id=kwd-24458753&gad_source=1&gclid=CjwKCAjwo6GyBhBwEiwAzQTmc0R2PjE9tVuiBVcWF-Vgni7TdACfjQiFF0rTfYjexctcm5BakJs8iRoCPQoQAvD_BwE&not_found=1&gor=start" target="_blank">BetterHelp</a></li>
+        </ul>
+
+        <h2>Personal Stories</h2>
+        <p>Real-life experiences shared by individuals.</p>
+
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:tt40mentalhealthpro@gmail.com">tt40mentalhealthpro@gmail.com</a></p>
+        <p>Phone: <a href="tel:+27815878342">081 587 8342</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/people/TT40-Mental-Health-Awareness-Programme/100080491457857" target="_blank">TT40 Mental Health Awareness Programme</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 TT40 Mental Health Awareness Programme</p>
+    </footer>
+</body>
+</html>
