@@ -15,7 +15,7 @@
         }
 
         header {
-            background-color: #4caf50;
+            background-color: #18f11f;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -23,11 +23,18 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
+            position: relative; /* Added position relative */
         }
 
         header img {
-            height: 50px;
+            height: 100px; /* Increased the height */
             width: auto;
+            position: absolute; /* Added position absolute */
+            left: 0; /* Set to left */
+        }
+
+        header h1 {
+            margin-left: 60px; /* Adjusted margin to accommodate the logo */
         }
 
         main {
@@ -52,6 +59,13 @@
         .contact-info {
             margin-top: 20px;
         }
+
+        .additional-image {
+            max-width: 100%; /* Limiting the width */
+            height: auto; /* Allowing the height to adjust proportionally */
+            display: block;
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +73,10 @@
         <img src="{{ url_for('static', filename='logo.png') }}" alt="TT40 Mental Health Awareness Logo">
         <h1>TT40 Mental Health Awareness Programme</h1>
     </header>
+    
+    <!-- New image added here -->
+    <img class="additional-image" src="{{ url_for('static', filename='mental_health_awareness.jpg') }}" alt="Mental Health Awareness">
+
     <main>
         <p>Mental illnesses affect 19% of the adult population, 46% of teenagers and 13% of children each year. People struggling with their mental health may be in your family, live next door, teach your children, work in the next cubicle or sit in the same church pew.</p>
 
