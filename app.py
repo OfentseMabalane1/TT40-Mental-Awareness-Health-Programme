@@ -8,3 +8,6 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+# this file is currently not working, was testing out how to create app with python
