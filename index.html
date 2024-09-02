@@ -1,146 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Home_Page | TT40 Mental Health Awareness Program</title>
-</head>
-<body>
+    <title>Home Page | TT40 Mental Health Awareness Program</title>
+  </head>
+  <body>
     <nav>
-        <div class="nav__logo">
-            <a href="#"><img src="assets/logo.png" alt="logo"></a>
-        </div>
-        <ul class="nav__links">
-            <li class="link"><a href="#" onclick="navigate('home')">Home</a></li>
-            <li class="link"><a href="#" onclick="navigate('program')">Program</a></li>
-            <li class="link"><a href="#" onclick="navigate('service')">Service</a></li>
-            <li class="link"><a href="#" onclick="navigate('community')">Community</a></li>
-        </ul>
-        <button class="btn" onclick="joinNow()">Join Now</button>   
+      <div class="nav__logo">
+        <a href="#"><img src="assets/logo.png" alt="TT40 Logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link">
+          <a href="#home" onclick="navigate('home')">Home</a>
+        </li>
+        <li class="link">
+          <a href="#program" onclick="navigate('program')">Program</a>
+        </li>
+        <li class="link">
+          <a href="#service" onclick="navigate('service')">Service</a>
+        </li>
+        <li class="link">
+          <a href="#community" onclick="navigate('community')">Community</a>
+        </li>
+      </ul>
+      <button class="btn" onclick="joinNow()">Join Now</button>
     </nav>
 
     <header class="section__container header__container" id="home">
-        <div class="header__content">
-            <span class="bg__blur"></span>
-            <span class="bg__blur header__blur"></span>
-            <h4>YOUR MENTAL HEALTH MATTERS</h4>
-            <h1><span>TT</span>40</h1>
-            <p>
-                Mental illnesses affect 19% of the adult population, 46% of teenagers and 13% of children each year. People struggling with their mental health may be in your family, live next door, teach your children, work in the next cubicle or sit in the same church pew. However, only half of those affected receive treatment, often because of the stigma attached to mental health. Untreated, mental illness can contribute to higher medical expenses, poorer performance at school and work, fewer employment opportunities and increased risk of suicide. A mental illness is a physical illness of the brain that causes disturbances in thinking, behavior, energy or emotion that make it difficult to cope with the ordinary demands of life. Research is starting to uncover the complicated causes of these diseases which can include genetics, brain chemistry, brain structure, experiencing trauma and/or having another medical condition, like heart disease. The two most common mental health conditions are anxiety disorders and depression. More than 19% of adults each year struggle with some type of anxiety disorder, including generalized anxiety disorder, panic disorder, social anxiety disorder, obsessive-compulsive disorder and post-traumatic stress disorder.
-            </p>
-            <button class="btn" onclick="getStarted()">Get Started</button>
-        </div>
-        <div class="header__image">
-            <img src="assets/web.jpg" alt="header" />
-        </div>
-    </header> 
+      <div class="header__content">
+        <span class="bg__blur"></span>
+        <span class="bg__blur header__blur"></span>
+        <h4>Your Mental Health Matters</h4>
+        <h1><span>TT</span>40</h1>
+        <p>
+          Mental illnesses affect 19% of the adult population, 46% of teenagers,
+          and 13% of children each year. People struggling with their mental
+          health may be in your family, live next door, teach your children,
+          work in the next cubicle, or sit in the same church pew. However, only
+          half of those affected receive treatment, often because of the stigma
+          attached to mental health. Untreated, mental illness can contribute to
+          higher medical expenses, poorer performance at school and work, fewer
+          employment opportunities, and increased risk of suicide. Mental
+          illness is a physical illness of the brain that causes disturbances in
+          thinking, behavior, energy, or emotion that make it difficult to cope
+          with the ordinary demands of life. Research is uncovering the
+          complicated causes of these diseases, which can include genetics,
+          brain chemistry, brain structure, experiencing trauma, and/or having
+          another medical condition, like heart disease. The two most common
+          mental health conditions are anxiety disorders and depression. More
+          than 19% of adults each year struggle with some type of anxiety
+          disorder, including generalized anxiety disorder, panic disorder,
+          social anxiety disorder, obsessive-compulsive disorder, and
+          post-traumatic stress disorder.
+        </p>
+        <button class="btn" onclick="getStarted()">Get Started</button>
+      </div>
+      <div class="header__image">
+        <img src="assets/web.jpg" alt="Mental Health Awareness" />
+      </div>
+    </header>
     <section class="section__container explore__container" id="program">
-        <div class="explore__header">
-            <h2 class="section__header">Anxiety Disorders</h2>
-            <div class="explore__nav">
-                <span><i class="ri-arrow-left-line"></i></span>
-                <span><i class="ri-arrow-right-line"></i></span>
-            </div>
+      <div class="explore__header">
+        <h2 class="section__header">Anxiety Disorders</h2>
+        <div class="explore__nav">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
         </div>
-        <div class="explore__grid">
-            <div class="explore__card">
-                <span><i class="ri-boxing-fill"></i></span>
-                <h4>post-traumatic stress disorder (PTSD)</h4>
-                <p>
-                 Learn more about post-traumatic stress disorder here.
-                </p>
-                <a href="#" onclick="navigateToDetail('ptsd')">click <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="explore__card">
-                <span><i class="ri-heart-pulse-fill"></i></span>
-                <h4>obsessive-compulsive disorder (OCD)</h4>
-                <p>
-                 Learn more about obsessive-compulsive disorder here.
-                </p>
-                <a href="#" onclick="navigateToDetail('ocd')">click <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="explore__card">
-                <span><i class="ri-user-smile-fill"></i></span>
-                <h4>panic disorder (panic attacks)</h4>
-                <p>
-                 Learn more about panic disorder here.
-                </p>
-                <a href="#" onclick="navigateToDetail('panic')">click <i class="ri-arrow-right-line"></i></a>
-            </div>  
-            <div class="explore__card">
-                <span><i class="ri-user-smile-fill"></i></span>
-                <h4>generalized anxiety disorder</h4>
-                <p>
-                Learn more about generalized anxiety disorder here.
-                </p>
-                <a href="#" onclick="navigateToDetail('gad')">click <i class="ri-arrow-right-line"></i></a>
-            </div>  
-            <div class="explore__card">
-                <span><i class="ri-user-smile-fill"></i></span>
-                <h4>specific phobias</h4>
-                <p>
-                Learn more about specific phobias here.
-                </p>
-                <a href="#" onclick="navigateToDetail('phobias')">click <i class="ri-arrow-right-line"></i></a>
-            </div>       
+      </div>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-boxing-fill"></i></span>
+          <h4>Post-Traumatic Stress Disorder (PTSD)</h4>
+          <p>Learn more about post-traumatic stress disorder here.</p>
+          <a href="#" onclick="navigateToDetail('ptsd')"
+            >Click <i class="ri-arrow-right-line"></i
+          ></a>
         </div>
+        <div class="explore__card">
+          <span><i class="ri-heart-pulse-fill"></i></span>
+          <h4>Obsessive-Compulsive Disorder (OCD)</h4>
+          <p>Learn more about obsessive-compulsive disorder here.</p>
+          <a href="#" onclick="navigateToDetail('ocd')"
+            >Click <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-user-smile-fill"></i></span>
+          <h4>Panic Disorder (Panic Attacks)</h4>
+          <p>Learn more about panic disorder here.</p>
+          <a href="#" onclick="navigateToDetail('panic')"
+            >Click <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-user-smile-fill"></i></span>
+          <h4>Generalized Anxiety Disorder</h4>
+          <p>Learn more about generalized anxiety disorder here.</p>
+          <a href="#" onclick="navigateToDetail('gad')"
+            >Click <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-user-smile-fill"></i></span>
+          <h4>Specific Phobias</h4>
+          <p>Learn more about specific phobias here.</p>
+          <a href="#" onclick="navigateToDetail('phobias')"
+            >Click <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+      </div>
     </section>
     <section class="section__container class__container" id="service">
-        <div class="class__image">
-            <span class="bg__blur"></span>
-            <img src="assets/about.jpg" alt="class" class="class__img-1">
-            <img src="assets/abt.jpg" alt="class" class="class__img-2">
-        </div>
-        <div class="class__content">
-            <h2 class="section__header">MENTAL HEALTH MATTERS</h2>
-            <p>
-                Mental health matters because it encompasses our emotional, psychological, and social well-being. 
-                It affects how we think, feel, and act. Good mental health enables us to cope with life's challenges,  
-                build strong relationships, contribute positively to society, 
-                and lead fulfilling lives. Mental health issues, on the other hand, can significantly impact our ability to function daily,  
-                leading to distress, impaired functioning, and even severe disorders that require professional treatment.
-                Recognizing the importance of mental health is crucial for promoting overall wellness, fostering resilience,  
-                and creating supportive environments where individuals can thrive.
-            </p>
-            <button class="btn" onclick="learnMore()">About</button>
-        </div> 
+      <div class="class__image">
+        <span class="bg__blur"></span>
+        <img
+          src="assets/about.jpg"
+          alt="Mental Health Service"
+          class="class__img-1"
+        />
+        <img
+          src="assets/abt.jpg"
+          alt="About Mental Health"
+          class="class__img-2"
+        />
+      </div>
+      <div class="class__content">
+        <h2 class="section__header">Mental Health Matters</h2>
+        <p>
+          Mental health matters because it encompasses our emotional,
+          psychological, and social well-being. It affects how we think, feel,
+          and act. Good mental health enables us to cope with life's challenges,
+          build strong relationships, contribute positively to society, and lead
+          fulfilling lives. Mental health issues, on the other hand, can
+          significantly impact our ability to function daily, leading to
+          distress, impaired functioning, and even severe disorders that require
+          professional treatment. Recognizing the importance of mental health is
+          crucial for promoting overall wellness, fostering resilience, and
+          creating supportive environments where individuals can thrive.
+        </p>
+        <button class="btn" onclick="learnMore()">Learn More</button>
+      </div>
     </section>
     <section class="section__container community__container" id="community">
-        <!-- Community content here -->
+      <!-- Community content here -->
     </section>
 
     <script>
-        function navigate(section) {
-            // Example of navigating to a different section by changing the URL hash
-            window.location.hash = section;
+      function navigate(section) {
+        // Navigate to a different section by changing the URL hash
+        window.location.hash = section;
+      }
 
-            // Additional logic to handle navigation can be added here
-        }
+      function joinNow() {
+        // Redirect to the sign-up page
+        window.location.href = "signup.html";
+      }
 
-        function joinNow() {
-            // Logic to handle joining now, such as redirecting to a sign-up page
-            window.location.href = 'signup.html';
-        }
+      function getStarted() {
+        // Redirect to the get started page
+        window.location.href = "get-started.html";
+      }
 
-        function getStarted() {
-            // Logic to handle getting started, such as displaying a modal or navigating to a different page
-            window.location.href = 'get-started.html';
-        }
+      function learnMore() {
+        // Redirect to the learn more page
+        window.location.href = "learn-more.html";
+      }
 
-        function learnMore() {
-            // Logic to handle learning more, such as expanding content or navigating to a detailed information page
-            window.location.href = 'learn-more.html';
-        }
-
-        function navigateToDetail(detailType) {
-            // Logic to navigate to detailed information pages for specific disorders
-            window.location.href = detailType + '.html';
-        }
+      function navigateToDetail(detailType) {
+        // Navigate to detailed information pages for specific disorders
+        window.location.href = detailType + ".html";
+      }
     </script>
-</body>
+  </body>
 </html>
