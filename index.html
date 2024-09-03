@@ -29,7 +29,7 @@
           <a href="#community" onclick="navigate('community')">Community</a>
         </li>
       </ul>
-      <button class="btn" onclick="joinNow()">Join Now</button>
+      <button class="btn" onclick="openModal()">Mental Health Tip</button>
     </nav>
 
     <header class="section__container header__container" id="home">
@@ -151,20 +151,42 @@
       <!-- Community content here -->
     </section>
 
+    <!-- Modal for Mental Health Tip -->
+    <div id="infoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Mental Health Tip</h2>
+        <p>
+          Take a deep breath and give yourself a moment of calm today. Your
+          mental health is important.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal for Get Started -->
+    <div id="startModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('startModal')">&times;</span>
+        <h2>Get Started with TT40</h2>
+        <p>
+          Welcome to the TT40 Mental Health Awareness Program! We're excited to
+          have you on board. To start making a difference today, consider
+          exploring our resources to learn more about mental health. By
+          understanding mental health better, you can contribute to healing
+          yourself and supporting others effectively.
+        </p>
+      </div>
+    </div>
+
     <script>
       function navigate(section) {
         // Navigate to a different section by changing the URL hash
         window.location.hash = section;
       }
 
-      function joinNow() {
-        // Redirect to the sign-up page
-        window.location.href = "signup.html";
-      }
-
       function getStarted() {
-        // Redirect to the get started page
-        window.location.href = "get-started.html";
+        // Open the get started modal
+        document.getElementById("startModal").style.display = "block";
       }
 
       function learnMore() {
@@ -175,6 +197,21 @@
       function navigateToDetail(detailType) {
         // Navigate to detailed information pages for specific disorders
         window.location.href = detailType + ".html";
+      }
+
+      function openModal() {
+        // Open the mental health tip modal
+        document.getElementById("infoModal").style.display = "block";
+      }
+
+      function closeModal() {
+        // Close the mental health tip modal
+        document.getElementById("infoModal").style.display = "none";
+      }
+
+      function closeModal() {
+        // Close the mental health tip modal
+        document.getElementById("startModal").style.display = "none";
       }
     </script>
   </body>

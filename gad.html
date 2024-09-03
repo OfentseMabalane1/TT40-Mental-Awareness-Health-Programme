@@ -27,7 +27,7 @@
         <li class="link"><a href="index.html#service">Service</a></li>
         <li class="link"><a href="index.html#community">Community</a></li>
       </ul>
-      <button class="btn join-btn" onclick="joinNow()">Join Now</button>
+      <button class="btn" onclick="openModal()">Mental Health Tip</button>
     </nav>
 
     <header class="section__container header__container">
@@ -139,15 +139,35 @@
       </p>
     </section>
 
-    <footer class="section__container footer__container">
-      <div class="footer__content">
-        <img src="assets/image5.jpg" alt="GAD Footer Image" />
+    <div class="footer__content">
+      <img
+        src="assets/image5.jpg"
+        alt="GAD Footer Image"
+        style="width: 600px; height: auto"
+      />
+    </div>
+
+    <!-- Modal for Mental Health Tip -->
+    <div id="infoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Mental Health Tip</h2>
+        <p>
+          Take a deep breath and give yourself a moment of calm today. Your
+          mental health is important.
+        </p>
       </div>
-    </footer>
+    </div>
 
     <script>
-      function joinNow() {
-        window.location.href = "signup.html";
+      function openModal() {
+        // Open the mental health tip modal
+        document.getElementById("infoModal").style.display = "block";
+      }
+
+      function closeModal() {
+        // Close the mental health tip modal
+        document.getElementById("infoModal").style.display = "none";
       }
     </script>
   </body>
