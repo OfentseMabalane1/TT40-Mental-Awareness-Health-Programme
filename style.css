@@ -395,7 +395,7 @@ footer {
 
 .media-container {
     display: flex;
-    width: 100%;
+    width: 50%;
     gap: 20px;
 }
 
