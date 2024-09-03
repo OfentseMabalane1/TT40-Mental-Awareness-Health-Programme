@@ -29,7 +29,9 @@
           <a href="#community" onclick="navigate('community')">Community</a>
         </li>
       </ul>
-      <button class="btn" onclick="openModal()">Mental Health Tip</button>
+      <button class="btn" onclick="openModal('infoModal')">
+        Mental Health Tip
+      </button>
     </nav>
 
     <header class="section__container header__container" id="home">
@@ -149,7 +151,7 @@
     <!-- Modal for Mental Health Tip -->
     <div id="infoModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="close" onclick="closeModal('infoModal')">&times;</span>
         <h2>Mental Health Tip</h2>
         <p>
           Take a deep breath and give yourself a moment of calm today. Your
@@ -181,32 +183,22 @@
 
       function getStarted() {
         // Open the get started modal
-        document.getElementById("startModal").style.display = "block";
+        openModal("startModal");
       }
 
-      function learnMore() {
-        // Redirect to the learn more page
-        window.location.href = "learn-more.html";
+      function openModal(modalId) {
+        // Open the specified modal
+        document.getElementById(modalId).style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        // Close the specified modal
+        document.getElementById(modalId).style.display = "none";
       }
 
       function navigateToDetail(detailType) {
-        // Navigate to detailed information pages for specific disorders
-        window.location.href = detailType + ".html";
-      }
-
-      function openModal() {
-        // Open the mental health tip modal
-        document.getElementById("infoModal").style.display = "block";
-      }
-
-      function closeModal() {
-        // Close the mental health tip modal
-        document.getElementById("infoModal").style.display = "none";
-      }
-
-      function closeModal() {
-        // Close the mental health tip modal
-        document.getElementById("startModal").style.display = "none";
+        // Handle navigation to specific detail pages
+        alert("Navigating to detail for: " + detailType);
       }
     </script>
   </body>
